@@ -1,0 +1,14 @@
+import pandas as pd 
+repair = pd.read_csv('repair.csv')
+repair.head(5) # displays the first 5 rows of the data set 
+repair.dtypes # displays the data types 
+repair.country # displays the column 'countries' in the data set 
+topthreecountries = { dictionary 
+    "nld": 21423,
+    "gbr": 18576,
+    "deu": 7427
+}
+countries = repair['country'].count() #counts all the countries total entries in the data set 
+countries #displays countries
+earliest_year = repair['year_repaired'].sort_values(ascending = False) #finding the earliest year in the dataset
+earliest_year
